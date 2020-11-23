@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSAutocompleteTextfield_Example' do
+  pod 'HSAutocompleteTextfield', :path => '../'
+
+  target 'HSAutocompleteTextfield_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
