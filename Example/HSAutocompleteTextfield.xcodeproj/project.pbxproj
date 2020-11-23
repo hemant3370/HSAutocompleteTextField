@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		308711C1B7921720443D99FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		308711C1B7921720443D99FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		375C4869D757FF30E864BC8F /* Pods-HSAutocompleteTextfield_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAutocompleteTextfield_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HSAutocompleteTextfield_Tests/Pods-HSAutocompleteTextfield_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		39E9E06DC02639578AA66F30 /* Pods_HSAutocompleteTextfield_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAutocompleteTextfield_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		441A8BF422CD9F1587B17713 /* Pods-HSAutocompleteTextfield_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAutocompleteTextfield_Example.release.xcconfig"; path = "Target Support Files/Pods-HSAutocompleteTextfield_Example/Pods-HSAutocompleteTextfield_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4654BC564EB7EBD6F9D99D22 /* HSAutocompleteTextfield.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HSAutocompleteTextfield.podspec; path = ../HSAutocompleteTextfield.podspec; sourceTree = "<group>"; };
+		4654BC564EB7EBD6F9D99D22 /* HSAutocompleteTextfield.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HSAutocompleteTextfield.podspec; path = ../HSAutocompleteTextfield.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* HSAutocompleteTextfield_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSAutocompleteTextfield_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		99D547027B45B0D1F48E6544 /* Pods-HSAutocompleteTextfield_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAutocompleteTextfield_Example.debug.xcconfig"; path = "Target Support Files/Pods-HSAutocompleteTextfield_Example/Pods-HSAutocompleteTextfield_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B0A4EB2FAB570908051685FA /* Pods_HSAutocompleteTextfield_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSAutocompleteTextfield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C641732DF42F82E41B568E32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C641732DF42F82E41B568E32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F5827FF4F9AA2DAB9835FC53 /* Pods-HSAutocompleteTextfield_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSAutocompleteTextfield_Tests.release.xcconfig"; path = "Target Support Files/Pods-HSAutocompleteTextfield_Tests/Pods-HSAutocompleteTextfield_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				375C4869D757FF30E864BC8F /* Pods-HSAutocompleteTextfield_Tests.debug.xcconfig */,
 				F5827FF4F9AA2DAB9835FC53 /* Pods-HSAutocompleteTextfield_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

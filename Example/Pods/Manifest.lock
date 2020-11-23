@@ -1,0 +1,16 @@
+PODS:
+  - HSAutocompleteTextfield (0.1.0)
+
+DEPENDENCIES:
+  - HSAutocompleteTextfield (from `../`)
+
+EXTERNAL SOURCES:
+  HSAutocompleteTextfield:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HSAutocompleteTextfield: 2c934276a0e84fcf7208ac5713fc9e73bde92045
+
+PODFILE CHECKSUM: 7e5250fe255186e781a5ad35981a48063f85cfcf
+
+COCOAPODS: 1.10.0

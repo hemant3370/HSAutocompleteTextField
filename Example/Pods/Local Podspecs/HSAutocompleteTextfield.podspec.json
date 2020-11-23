@@ -1,0 +1,22 @@
+{
+  "name": "HSAutocompleteTextfield",
+  "version": "0.1.0",
+  "summary": "A short description of HSAutocompleteTextfield.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Hemant Singh/HSAutocompleteTextfield",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Hemant Singh": "hemant.singh@nagarro.com"
+  },
+  "source": {
+    "git": "https://github.com/Hemant Singh/HSAutocompleteTextfield.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HSAutocompleteTextfield/Classes/**/*"
+}
