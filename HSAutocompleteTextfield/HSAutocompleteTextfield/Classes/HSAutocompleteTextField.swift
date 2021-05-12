@@ -135,11 +135,12 @@ extension HSAutocompleteTextField {
     
     // Updating SearchtableView
     func updateSearchTableView() {
-        if let tableView = tableView {
-            superview?.bringSubview(toFront: tableView)
+        if let tableView = tableView, self.isFirstResponder {
+            superview?.bringSubviewToFront(tableView)
             var tableHeight: CGFloat = 0
-            let originInWindow = getCoordinate(self)
-            let availableHeight = (window?.bounds.height ?? 0) - keyBoardHeight
+            let mainViewReference = getCoordinate(self)
+            let originInWindow = mainViewReference.0
+            let availableHeight = mainViewReference.1.bounds.height - keyBoardHeight
             var yOrigin: CGFloat = 0
             if originInWindow.y > availableHeight / 2 {
                 tableHeight = min(tableView.contentSize.height, originInWindow.y - 64)
@@ -160,29 +161,28 @@ extension HSAutocompleteTextField {
             //Setting tableView style
             tableView.layer.masksToBounds = true
             tableView.separatorInset = UIEdgeInsets.zero
-//            tableView.layer.cornerRadius = 5.0
             tableView.separatorColor = UIColor.clear
             tableView.backgroundColor = UIColor.clear
             if self.isFirstResponder {
-                superview?.bringSubview(toFront: self)
+                superview?.bringSubviewToFront(self)
             }
             tableView.reloadData()
         }
     }
     
-    func getCoordinate(_ view: UIView) -> CGPoint {
-        var x = view.frame.origin.x
-        var y = view.frame.origin.y
-        var oldView = view
+     func getCoordinate(_ view: UIView) -> (CGPoint, UIView) {
+    var x = view.frame.origin.x
+    var y = view.frame.origin.y
+    var oldView = view
 
-        while let superView = oldView.superview {
-            x += superView.frame.origin.x
-            y += superView.frame.origin.y
-            if superView.next is UIViewController {
-                break //superView is the rootView of a UIViewController
-            }
-            oldView = superView
+    while let superView = oldView.superview {
+        x += superView.frame.origin.x
+        y += superView.frame.origin.y
+        if superView.next is UIViewController {
+            break //superView is the rootView of a UIViewController
         }
-        return CGPoint(x: x, y: y)
+        oldView = superView
     }
+    return (CGPoint(x: x, y: y), oldView)
+}
 }
